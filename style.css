@@ -1,0 +1,150 @@
+@font-face {
+    font-family: atw;
+    src: url(atwriter.ttf);
+}
+@font-face {
+    font-family: analogist;
+    src: url(Analogist.ttf);
+}
+
+@keyframes moverSonic {
+    0% {
+        transform: translateX(-100%); /* Comece fora da tela à esquerda */
+      }
+      100% {
+        transform: translateX(100%); /* Vá até fora da tela à direita */
+      }
+    }
+
+:root{
+    --vermelho: #BD4F53;
+    --preto: #332828;
+    --branco: #E0E3E6;
+    --fontTexto: 400 14px 'atw'
+}
+
+body{
+   background-color: black;
+   overflow: hidden;
+}
+
+.botoes{
+    margin: auto;
+}
+
+.container{
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#registro{
+    display: flex;
+    margin: auto;
+    font-family: atw, sans-serif;
+    color: var(--branco);
+    font: 300;
+    margin-bottom: 30px;
+}
+
+input{
+    /* display: block; */
+    margin-bottom: 10px;
+    padding: 0.5%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#entradaSenha{
+    margin-bottom: 30px;
+}
+
+#requisitos{
+    font-family: analogist, sans-serif;
+    color: var(--branco);
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: flex;
+    /* display: flex-row;
+    flex-direction: row; */
+}
+
+.requisito{
+    margin: auto;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.aviso{
+    margin: auto;
+    font: var(--fontTexto);
+    color: var(--branco);
+}
+
+.sonic {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    cursor: pointer;
+    animation: moverSonic 10s infinite;
+}
+
+.vermelho {
+    color: red;
+    transition: color 0.3s;
+}
+
+.verde {
+    color: green;
+    transition: color 0.3s;
+}
+
+#medidorPoder {
+    margin-top: 10px;
+    height: 20px;
+    width: 0;
+    background-color: gray;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+#mensagemRegistro {
+    margin: auto;
+    text-align: center;
+    color: var(--branco);
+    font-family: 'atw', sans-serif;
+    font-weight: 300;
+    background-color: var(--vermelho);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    display: none; /* Adicione a propriedade display: none; inicialmente */
+}
+
+#mensagemRegistro h2 {
+    margin: 0;
+}
+
+.oculto{
+    display: none;
+}
+
+button {
+    margin: 10px auto; /* Centralizar o botão */
+    padding: 10px 20px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px; /* Adicionar border-radius */
+    cursor: pointer;
+    transition: box-shadow 0.3s; /* Adicionar transição para o box-shadow */
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgba(255, 230, 230, 0.5); /* Adicionar box-shadow ao passar o mouse */
+}

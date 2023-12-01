@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registre-se Agora...</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="registro">
+            <h1>Registre-se</h1>
+        </div>
+
+        <div class="botoes">
+            <input type="text" id="entradaNome" placeholder="Digite seu Nome">
+            <input type="password" id="entradaSenha" placeholder="Digite sua senha">
+        </div>
+
+        <button onclick="verificarRegistro()">Registrar</button>
+
+        <div id="medidorPoder"></div>
+
+        <div id="requisitos">
+            <div id="requisitoComprimento" class="requisito">Comprimento</div>
+            <div id="requisitoMinuscula" class="requisito">Letra minúscula</div>
+            <div id="requisitoMaiuscula" class="requisito">Letra maiúscula</div>
+            <div id="requisitoNumero" class="requisito">Número</div>
+            <div id="requisitoSimbolo" class="requisito">Símbolo</div>
+        </div>
+
+        <h1 class="aviso">Caso a senha não for forte o suficiente
+            hackers podem lhe vender na dark web</h1>
+    </div>
+
+    <div id="mensagemRegistro">
+        <h2>Parabéns, você foi registrado!</h2>
+    </div>
+
+    <div class="sonic" onclick="exibirAlerta()">
+        <img src="WhatsApp Image 2023-12-01 at 10.24.31.jpeg" alt="você foi avisado">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
